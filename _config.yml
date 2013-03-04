@@ -1,0 +1,24 @@
+menu:
+  Home: /
+  Archives: /archives
+
+widgets: 
+- search
+- category
+- tag
+- twitter
+
+excerpt_link: Read More
+
+addthis:
+  enable: false
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+fancybox: true
+
+google_analytics:
+rss:
