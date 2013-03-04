@@ -11,36 +11,20 @@ article
   img
     margin-bottom 1.5em
     height auto
-  
-  .wp-caption
-    max-width 100%
-    height auto
-    img
-      margin-bottom 5px
-    p
-      line-height 1em
-      font-size .6875em   
 
-  &.page
-    padding-left 20px
-    .icon
-      display none
+  h1
+    margin-bottom .5em
+    font-size 1.3125em
 
-  &.post
-    .icon
-      &:before
-        content '\f016'
+  h2
+    margin-bottom .875em
+    font-size 1.125em
 
-  &.photo
-    .icon
-      &:before
-        content '\f030'
+  h3
+    margin-bottom .875em
 
-  &.link
-    .icon
-      &:before
-        content '\f0c1'
-
+  $h3, & h4,& h5,& h6
+    font-size .875em
     .title
       a
         &:after
@@ -49,13 +33,9 @@ article
           font 12px font-icon
           padding-left 10px
           vertical-align super
-
-  .post-content
-    padding 20px 20px 15px (icon-size + icon-gap + 20)
-    margin-bottom 50px
-    position relative
-    @media screen and (max-width: 600px)
-      padding-left 20px
+  
+  p 
+    line-height: 1.6;
 
   .gallery
     overflow hidden
@@ -95,52 +75,20 @@ article
 
     .prev
       left 0
-      &:before
-        content '\f053'
-        left 10px
 
     .next
       right 0
-      &:before
-        content '\f054'
-        right 10px
 
   header
-    .icon
-      width icon-size
-      height icon-size
-      margin-right icon-gap
-      position absolute
-      top 20px
-      left 20px
-      color color-link
-      @media screen and (max-width: 600px)
-        display none
-      &:before
-        position absolute
-        font 32px font-icon    
-        top 0
-        left 0 
-        width 32px
-        text-align center
-
     time
-      color color-meta
-      font 0.9em font-title
+      font-size 0.5em
       margin-bottom 5px
       display block
       line-height 1
-
-    .title
-      font-weight normal
       a
-        color color-font
-        &:hover
-          color color-link
-          text-decoration none
+        color color-meta
 
   .entry
-    text-align justify
     line-height 1.6
     p, blockquote, ul, ol, dl, table, iframe, h3, h4, h5, h6, .video-container
       margin-top 15px
@@ -254,7 +202,6 @@ article
   footer
     margin-top 15px
     padding-top 10px
-    border-top 1px solid color-border
     color color-meta
     font-size 0.9em
     line-height 16px
@@ -262,21 +209,6 @@ article
     min-height 16px
     a
       color color-meta
-      &:hover
-        color color-link
-        text-decoration none
-      &:before
-        font 1.1em font-icon
-        padding-right 10px
-        vertical-align middle
-
-      &.more-link
-        &:before
-          content '\f054'
-
-      &.comment-link
-        &:before
-          content '\f075'
 
     .categories, .tags
       position relative
@@ -285,18 +217,6 @@ article
       &:before
         position absolute
         font 1.1em font-icon
-
-    .categories
-      &:before
-        content '\f07b'
-        top 2px
-        left 1px
-
-    .tags
-      &:before
-        content '\f02b'
-        top 3px
-        left 2px
 
     .addthis
       margin-top 15px

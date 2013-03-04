@@ -215,118 +215,81 @@
     width: 100%;
     margin-right: 0;
   }
-
-  footer p#copyright {
-    float: left;
-    width: 100%;
-    margin-bottom: 1.5em;
-  }
-  footer .social {
-    position: static;
-    clear: left;
-    width: 100%;
-  }
-  footer .social li {
-    float: left;
-    margin-right: 8px;
-    margin-left: 0;
-  }
-  footer .social li a {
-    opacity: 1;
+  .widget {
+    display: none;
   }
 }
 /* TABLET (PORTRAIT)
 ----------------------------------------------- */
-@media only screen and (min-width: 768px) and (max-width: 920px) {
-  header[role="banner"] {
-    position: relative;
-    float: left;
-    width: 100%;
-    margin-bottom: 0;
-  }
+@media only screen and (min-width: 768px) and (max-width: 920px)
+  header
+    &[role="banner"]
+      position relative
+      float left
+      width 100%
+      margin-bottom 0
+    .about 
+      float left
+      width 65.5097614%
+      margin-bottom 2em
+    .about .links 
+      margin-bottom 20px
+    a#toggle
+      top -20px
+      right 0
 
-  header #branding img {
-    float: left;
-    max-width: 100%;
-    margin-bottom: 30px;
-  }
-  header #branding h1 {
-    float: left;
-    max-width: 200px;
-    margin: 0 0 10px 20px;
-    padding: 3.6em 0 0 1.5em;
-    text-align: right;
-  }
-  header .about {
-    float: left;
-    width: 65.5097614%;
-    margin-bottom: 2em;
-  }
-  header .about .links {
-    margin-bottom: 20px;
-  }
-  header a#toggle {
-    top: -20px;
-    right: 0;
-  }
+  #branding 
+    img 
+      float left
+      max-width 100%
+      margin-bottom 30px
+    h1
+      float left
+      max-width 200px
+      margin 0 0 10px 20px
+      padding 3.6em 0 0 1.5em
+      text-align: right
+      /* HEADER CONDITIONALS */
+      &.no-img
+        max-width auto
+        margin 0
+        padding 2.5em 0 1em 0
+        text-align left
 
-  nav {
-    clear: both;
-    position: absolute;
-    top: 3.4em;
-    right: 0;
-    max-width: 40%;
-    padding: 0;
-    border: none;
-    text-align: right;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-  }
-  nav li {
-    display: inline;
-    margin-right: 10px;
-  }
+  nav
+    clear both
+    position absolute
+    top 3.4em
+    right 0
+    max-width 40%
+    padding 0
+    border none
+    text-align right
+    -webkit-box-shadow none
+    -moz-box-shadow none
+    box-shadow none
+    li 
+      display inline
+      margin-right 10px
+    &.no-img 
+      top 2.5em
+    &.no-title 
+      top 62px
+  
+  .widget
+    display none
 
-  /* HEADER CONDITIONALS */
-  #branding h1.no-img {
-    max-width: auto;
-    margin: 0;
-    padding: 2.5em 0 1em 0;
-    text-align: left;
-  }
+  article
+    figure 
+      width auto
+    &.photo figure.post-image 
+      width 100%
+    &.photo figure.post-image img 
+      width 100%
 
-  nav.no-img {
-    top: 2.5em;
-  }
-
-  nav.no-title {
-    top: 62px;
-  }
-
-  article figure {
-    width: auto;
-  }
-
-  article.photo figure.post-image {
-    width: 100%;
-  }
-  article.photo figure.post-image img {
-    width: 100%;
-  }
-}
 /*  RETINA DISPLAY OVERRIDES
 ------------------------------------------------*/
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  .feedback .comments a {
-    background-position: -5px 2px;
-    background-size: 22px;
-  }
-
-  .feedback .notes a {
-    background-position: -5px 2px;
-    background-size: 22px;
-  }
 
   .flex-direction-nav li a {
     padding: 0;
@@ -347,11 +310,6 @@
 
   article.link p > a:after {
     background-position: -5px top;
-    background-size: 22px;
-  }
-
-  footer .social li a {
-    background-position: -6px 2px;
     background-size: 22px;
   }
 

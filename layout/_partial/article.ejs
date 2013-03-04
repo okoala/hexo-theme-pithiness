@@ -1,23 +1,20 @@
 <article class="<%= item.layout %>">
   <header>
+    <% if (item.layout != 'page'){ %>
+      <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
+    <% } %>
     <%- partial('post/title') %>
     <% if (item.photos){ %>
       <%- partial('post/gallery') %>
     <% } %>
-    <div>
-      <% if (item.layout != 'page'){ %>
-        <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
-      <% } %>
-    </div>
   </header>
-  <section class="post-body">
+  <section class="entry">
     <% if (item.excerpt && index){ %>
       <%- item.excerpt %>
     <% } else { %>
       <%- item.content %>
     <% } %>
   </section>
-  <div class="clearfix"></div>
   <footer>
     <% if (index){ %>
       <% if (item.excerpt){ %>
