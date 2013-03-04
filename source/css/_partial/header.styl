@@ -1,28 +1,65 @@
-#header
-  text-shadow 0 0 1px #fff
-  margin 50px auto
-  a
-    color #999
-    &:hover
-      color color-link
-      text-decoration none
-    
-  h1
-    font-weight normal
-    font-size 2.5em
-    line-height 1
+header #branding img {
+  width: 140px;
+  height: auto;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
 
-  h2
-    font-weight normal
-    font-size 0.9em
-    line-height 1
-    margin-top 10px
-  
-  #main-nav
-    font-family font-title
-    line-height 2.5em
-    ul
-      list-style none
-      li
-        float left
-        margin-left 30px
+.borderradius header #branding img.circle {
+  -webkit-border-radius: 70px;
+  -moz-border-radius: 70px;
+  -ms-border-radius: 70px;
+  -o-border-radius: 70px;
+  border-radius: 70px;
+}
+
+header #branding h1#site-title {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+header .about {
+  display: block;
+  margin-bottom: 30px;
+  font-size: .75em;
+  line-height: 1.5em;
+}
+header .about em {
+  font-style: italic;
+}
+header .about strong {
+  font-weight: bold;
+}
+header .about p + .links {
+  margin-top: 20px;
+}
+header .about .links a {
+  font-weight: bold;
+}
+
+header #toggle {
+  display: none;
+}
+
+nav {
+  margin-bottom: 30px;
+  padding: 1em 0 1.1em;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+  -webkit-box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075);
+}
+nav ul {
+  font-size: .75em;
+  line-height: 1.5em;
+}
+nav li a {
+  font-weight: bold;
+}
+
+.sub-menu {
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-left: 1.5em;
+}

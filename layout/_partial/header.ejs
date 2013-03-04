@@ -1,13 +1,20 @@
-<div class="alignleft">
-  <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
-  <h2><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></h2>
+<div id="branding">
+  <a href="<%- config.root %>">
+    <img class="circle" src="http://demo.thethemefoundry.com/anthem-theme/files/2011/10/rgbmonster-sara-04.jpg" alt="Anthem">
+  </a>
+  <h1 id="site-title">
+    <a href="<%- config.root %>"><%= config.title %></a>
+  </h1>
 </div>
-<nav id="main-nav" class="alignright">
+<a href="#" id="toggle">信息</a>
+<div class="about" style="display: none">
+  <p><% if (config.subtitle){ %><%= config.subtitle %><% } %></p>
+</div>
+<nav class="menu-navigation-container">
   <ul>
     <% for (var i in theme.menu){ %>
       <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
     <% } %>
   </ul>
-  <div class="clearfix"></div>
 </nav>
-<div class="clearfix"></div>
+<%- partial('sidebar') %>
