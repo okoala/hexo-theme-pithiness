@@ -52,7 +52,6 @@
 
       callback();
       this.animate({opacity: 1}, 500);
-      parent.animate({height: width * nHeight / nWidth}, 500);
     });
   };
 

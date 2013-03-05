@@ -40,6 +40,6 @@
   <link href="<%- config.root %>favicon.png" rel="icon">
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
   <link rel="stylesheet" href="<%- config.root %>css/style.css" media="screen" type="text/css">
-  <script src="js/modernizr.js"></script>
+  <script src="<%- config.root %>js/modernizr.js"></script>
   <%- partial('google_analytics') %>
 </head>

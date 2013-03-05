@@ -1,8 +1,5 @@
 <article class="<%= item.layout %>">
   <header>
-    <% if (item.layout != 'page'){ %>
-      <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
-    <% } %>
     <%- partial('post/title') %>
     <% if (item.photos){ %>
       <%- partial('post/gallery') %>
@@ -16,16 +13,21 @@
     <% } %>
   </section>
   <footer>
+    <% if (item.layout != 'page'){ %>
+      <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
+    <% } %>
+    <div class="clearfix"></div>
     <% if (index){ %>
-      <% if (item.excerpt){ %>
-        <div class="alignleft">
-          <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
-        </div>
-      <% } %>
-      <% if (item.comment && config.disqus_shortname){ %>
-      <div class="alignright">
-        <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
+      <div class="alignleft">
+        <% if (item.comment && config.disqus_shortname){ %>
+          <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
+        <% } %>
+        <%- partial('post/tag') %>
       </div>
+      <% if (item.excerpt){ %>
+        <div class="alignright">
+          <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= __('more_link') %></a>
+        </div>
       <% } %>
     <% } else { %>
       <%- partial('post/category') %>
