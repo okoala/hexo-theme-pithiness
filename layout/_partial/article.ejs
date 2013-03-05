@@ -13,15 +13,17 @@
     <% } %>
   </section>
   <footer>
-    <% if (item.layout != 'page'){ %>
-      <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
-    <% } %>
+    
     <div class="clearfix"></div>
     <% if (index){ %>
-      <div class="alignleft">
+      <div class="alignleft widget">
         <% if (item.comment && config.disqus_shortname){ %>
           <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
         <% } %>
+        <% if (item.layout != 'page'){ %>
+          <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
+        <% } %>
+        <%- partial('post/category') %>
         <%- partial('post/tag') %>
       </div>
       <% if (item.excerpt){ %>
@@ -30,9 +32,14 @@
         </div>
       <% } %>
     <% } else { %>
-      <%- partial('post/category') %>
-      <%- partial('post/tag') %>
-      <%- partial('post/share') %>
+      <div class="widget">
+        <% if (item.layout != 'page'){ %>
+          <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
+        <% } %>
+        <%- partial('post/category') %>
+        <%- partial('post/tag') %>
+        <%- partial('post/share') %>
+      </div>
     <% } %>
     <div class="clearfix"></div>
   </footer>

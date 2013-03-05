@@ -86,8 +86,15 @@ article
 
   .entry
     line-height 1.6
+    a
+      color #149EE7
+      font-weight bold
+      &:hover
+        color: rgba(20, 158, 231, 0.5);
     p, blockquote, ul, ol, dl, table, iframe, h3, h4, h5, h6, .video-container
       margin-top 15px
+      font-size .875em
+      line-height 1.5em
 
     blockquote
       border-top 1px solid color-border
@@ -204,15 +211,13 @@ article
     line-height 16px
     position relative
     min-height 16px
-    time, .tags, .categories
-      padding-bottom .71875em
-      display block
     a
       color color-meta
+      font-size 12px
       &:hover
         color rgba(0, 0, 0, 0.95)
         opacity 1
-    .tags
+    .widget
       a
         margin-right 5px
     .addthis

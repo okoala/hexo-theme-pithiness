@@ -5,7 +5,5 @@
     tags.push('<a href="' + config.root + tag.path + '">#' + tag.name + '</a>');
   });
   %>
-  <div class="tags">
-    <%- tags.join(', ') %>
-  </div>
+  <%- tags.join(', ') %>
 <% } %>
