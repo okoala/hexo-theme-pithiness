@@ -6,52 +6,50 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  font-size: 100%;
-  font-weight: inherit;
-  font-style: normal;
-  vertical-align: baseline;
-  background: transparent;
-  border: 0;
-  outline: 0;
-}
+time, mark, audio, video
+  margin 0
+  padding 0
+  font-size 100%
+  font-weight inherit
+  font-style normal
+  vertical-align baseline
+  background transparent
+  border 0
+  outline 0
 
-article, aside, figure, figure img, hgroup, footer, header, nav, section {
-  display: block;
-}
 
-blockquote, q {
-  quotes: none;
-}
+article, aside, figure, figure img, hgroup, footer, header, nav, section
+  display block
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
+blockquote,
+q
+  quotes none
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+blockquote:before, 
+blockquote:after,
+q:before,
+q:after
+  content ''
+  content none
 
-input, select {
-  vertical-align: middle;
-}
+table
+  border-collapse collapse
+  border-spacing 0
 
-a img {
-  border: 0;
-}
+input,
+select
+  vertical-align: middle
 
-:focus {
-  outline: 0;
-}
 
-a:hover, a:active {
-  outline: none;
-}
+a img
+  border 0
+
+:focus
+  outline 0
+
+a:hover,
+a:active
+  outline none
 
 body
   background color-background
@@ -98,18 +96,12 @@ body
 a 
   text-decoration none
   color rgba(0, 0, 0, 0.95)
-  -webkit-transition all 0.2s ease-in-out
-  -moz-transition all 0.2s ease-in-out
-  -o-transition all 0.2s ease-in-out
   transition all 0.2s ease-in-out
   &:hover, &:focus
     color rgba(0, 0, 0, 0.5)
     img
       opacity .85
   img
-    -webkit-transition all 0.2s ease-in-out
-    -moz-transition all 0.2s ease-in-out
-    -o-transition all 0.2s ease-in-out
     transition all 0.2s ease-in-out
 
 /* custom selection colors */

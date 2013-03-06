@@ -1,227 +1,167 @@
 /* MOBILE + TABLET STYLES
 ----------------------------------------------- */
-@media only screen and (max-width: 920px) {
-  #container {
-    position: static;
-    margin: 0 auto 2em;
-    padding: 20px 20px;
-    max-width: 100%;
-    overflow: hidden;
-  }
+@media only screen and (max-width: 920px)
+  .container
+    position static
+    margin 0 auto 2em
+    padding 20px 20px
+    max-width 100%
+    overflow hidden
 
-  header .about {
-    clear: both;
-    display: none;
-  }
-  header .about .links li {
-    display: inline;
-  }
-  header .about .links li:after {
-    content: "/";
-    margin: 0 10px;
-    color: rgba(0, 0, 0, 0.35);
-    font-weight: normal;
-  }
-  header .about .links li:last-child:after {
-    content: "";
-    margin-right: 0;
-  }
+    .blog
+      float left
+      width 100%
+      min-height auto
+      margin-left 0
 
-  a#toggle {
-    position: absolute;
-    top: 0;
-    right: 20px;
-    display: block;
-    padding: .65em 1em;
-    font-weight: normal;
-    font-size: .625em;
-    color: #AAA;
-    color: rgba(0, 0, 0, 0.35);
-    background: #F1F1F1;
-    border-right: 1px solid #E9E9E9;
-    border-bottom: 1px solid #E9E9E9;
-    border-left: 1px solid #E9E9E9;
-    -moz-border-radius-bottomright: 5px;
-    -webkit-border-bottom-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    -moz-border-radius-bottomleft: 5px;
-    -webkit-border-bottom-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
-    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
-  }
+  header[role="banner"]
+    .about
+      clear both
+      display none
 
-  a#toggle:hover {
-    color: rgba(0, 0, 0, 0.75);
-  }
+      .links
+        li
+          display inline
+          &:after
+            content "/"
+            margin 0 10px
+            color rgba(0, 0, 0, 0.35)
+            font-weight normal
 
-  #content {
-    float: left;
-    width: 100%;
-    min-height: auto;
-    margin-left: 0;
-  }
-}
+          &:last-child:after 
+            content ""
+            margin-right 0
+
+  a#toggle
+    position absolute
+    top 0
+    right 20px
+    display block
+    padding .65em 1em
+    font-weight normal
+    font-size .625em
+    color #AAA
+    color rgba(0, 0, 0, 0.35)
+    background #F1F1F1
+    border-right 1px solid #E9E9E9
+    border-bottom 1px solid #E9E9E9
+    border-left 1px solid #E9E9E9
+    border-bottom-right-radius 5px
+    border-bottom-left-radius 5px
+    box-shadow 1px 1px 3px rgba(0, 0, 0, 0.05)
+    text-shadow 0 1px 1px rgba(255, 255, 255, 0.85)
+
+    &:hover
+      color rgba(0, 0, 0, 0.75)
+
 /* MOBILE STYLES
 ----------------------------------------------- */
-@media only screen and (max-width: 767px) {
-  header[role="banner"] {
-    float: left;
-    width: 100%;
-    min-height: 105px;
-    margin-bottom: 0;
-  }
+@media only screen and (max-width: 767px)
+  header
+    &[role="banner"]
+      float left
+      width 100%
+      min-height 105px
+      margin-bottom 0
 
-  .flex-control-nav {
-    display: none;
-  }
+    .about
+      margin-bottom 20px
+      padding 20px
+      background rgba(0, 0, 0, 0.05)
+      border-radius 3px
+    
+      .links
+        margin-bottom 0
 
-  header #branding img {
-    width: 80px;
-    float: left;
-    max-width: 100%;
-    margin: 0 10px 20px 0;
-  }
-  header #branding h1 {
-    float: right;
-    max-width: 190px;
-    margin: 0;
-    padding-top: 25px;
-    text-align: right;
-  }
-  header .about {
-    margin-bottom: 20px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.05);
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
-  }
-  header .about .links {
-    margin-bottom: 0;
-  }
-  header .about .links li {
-    line-height: 1.8em;
-  }
-  header a#toggle {
-    top: 0;
-    right: 20px;
-  }
+        li
+          line-height 1.8em
 
-  body.logged-in header a#toggle {
-    top: 28px;
-  }
+  .branding
+    img
+      width 80px
+      float left
+      max-width 100%
+      margin 0 10px 20px 0
+  
+    h1
+      float right
+      max-width 190px
+      margin 0
+      padding-top 25px
+      text-align right
+  
+  a#toggle
+    top 0
+    right 20px
 
-  nav {
-    clear: right;
-    float: right;
-    margin: 0 0 20px;
-    padding: 5px 0;
-    border: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-  }
-  nav ul {
-    text-align: right;
-  }
-  nav li {
-    display: inline;
-    margin: 0;
-  }
-  nav li a {
-    color: rgba(0, 0, 0, 0.25);
-  }
-  nav li:after {
-    content: "/";
-    margin: 0 4px 0 8px;
-    color: rgba(0, 0, 0, 0.15);
-    font-weight: normal;
-  }
-  nav li:last-child:after {
-    content: "";
-    margin: 0;
-    font-weight: normal;
-  }
-  nav li:first-child {
-    padding-left: 10px;
-  }
+  nav
+    clear right
+    float right
+    margin 0 0 20px
+    padding 5px 0
+    border none
+    box-shadow none
+
+    ul
+      text-align right
+
+    li
+      display inline
+      margin 0
+
+      a 
+        color rgba(0, 0, 0, 0.25)
+
+      &:after 
+        content "/";
+        margin 0 4px 0 8px
+        color rgba(0, 0, 0, 0.15)
+        font-weight normal
+      
+      &:last-child:after
+        content ""
+        margin 0
+        font-weight normal
+      
+      &:first-child 
+        padding-left 10px
 
   /* HEADER CONDITIONALS */
-  #branding h1.no-img {
-    float: left;
-  }
+  article p,
+  article li
+    width 100%
 
-  nav.no-img {
-    clear: left;
-    float: left;
-  }
-  nav.no-img li {
-    padding: 0;
-  }
+  article blockquote,
+  article ul,
+  article ol
+    width 90%
 
-  #content .post-body .gallery img {
-    padding: 2px;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border-radius: 0;
-  }
+  article ul.normal,
+  article ol.normal
+    margin-left 20px
 
-  article p, article li, #content.page p, #content.page li {
-    width: 100%;
-  }
-  article blockquote, article ul, article ol, #content.page blockquote, #content.page ul, #content.page ol {
-    width: 90%;
-  }
-  article ul.normal, article ol.normal, #content.page ul.normal, #content.page ol.normal {
-    margin-left: 20px;
-  }
-  article figure, #content.page figure {
-    width: 100%;
-  }
-  article .r-float, article .l-float, article .alignleft, article .alignright, #content.page .r-float, #content.page .l-float, #content.page .alignleft, #content.page .alignright {
-    display: inline-block;
-    float: none;
-    width: auto;
-    margin: 0 0 1em 0;
-  }
-  article .r-float img, article .l-float img, article .alignleft img, article .alignright img, #content.page .r-float img, #content.page .l-float img, #content.page .alignleft img, #content.page .alignright img {
-    width: 100%;
-  }
+  article figure
+    width: 100%
 
-  #respond fieldset > textarea {
-    width: 100%;
-  }
+  article .alignleft,
+  article .alignright
+    display inline-block
+    float none
+    width auto
+    margin 0 0 1em 0
 
-  aside[role="widgets"] {
-    clear: both;
-    width: 100%;
-    margin-bottom: 3em;
-    padding: 2em 0 1em;
-  }
-  aside[role="widgets"] .group {
-    clear: both;
-    position: relative;
-    float: left;
-    width: 100%;
-    margin-right: 0;
-  }
+  article .alignleft img, 
+  article .alignright img
+    width 100%
 
-  article footer .alignright {
-    display: block;
-    margin: 0;
-  }
 
-  .widget {
-    display: none;
-  }
-}
+  article footer .alignright
+    display block
+    margin 0
+
+  .widget
+    display none
+
 /* TABLET (PORTRAIT)
 ----------------------------------------------- */
 @media only screen and (min-width: 768px) and (max-width: 920px)
@@ -231,33 +171,31 @@
       float left
       width 100%
       margin-bottom 0
+
     .about 
       float left
       width 65.5097614%
       margin-bottom 2em
-    .about .links 
-      margin-bottom 20px
-    a#toggle
-      top -20px
-      right 0
 
-  #branding 
+      .links 
+        margin-bottom 20px
+
+  a#toggle
+    top -20px
+    right 0
+
+  .branding 
     img 
       float left
       max-width 100%
       margin-bottom 30px
+
     h1
       float left
       max-width 200px
       margin 0 0 10px 20px
       padding 3.6em 0 0 1.5em
       text-align: right
-      /* HEADER CONDITIONALS */
-      &.no-img
-        max-width auto
-        margin 0
-        padding 2.5em 0 1em 0
-        text-align left
 
   nav
     clear both
@@ -268,16 +206,10 @@
     padding 0
     border none
     text-align right
-    -webkit-box-shadow none
-    -moz-box-shadow none
     box-shadow none
     li 
       display inline
       margin-right 10px
-    &.no-img 
-      top 2.5em
-    &.no-title 
-      top 62px
   
   .widget
     display none
@@ -285,48 +217,10 @@
   article
     figure 
       width auto
-    &.photo figure.post-image 
-      width 100%
-    &.photo figure.post-image img 
-      width 100%
 
 /*  RETINA DISPLAY OVERRIDES
 ------------------------------------------------*/
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-
-  .flex-direction-nav li a {
-    padding: 0;
-    bottom: -2px;
-  }
-
-  .flex-direction-nav li a.flex-next {
-    padding: 0;
-    background-position: 100% top;
-    background-size: 22px;
-  }
-
-  .flex-direction-nav li a.flex-prev {
-    padding: 0;
-    background-position: -5px top;
-    background-size: 22px;
-  }
-
-  article.link p > a:after {
-    background-position: -5px top;
-    background-size: 22px;
-  }
-
-  ul.playlist li a,
-  ul.playlist li.sm2_playing a {
-    background-position: 0 center;
-    background-size: 16px;
-  }
-
-  ul.playlist li a {
-    background-image: url(images/icon-play-2x.png);
-  }
-
-  ul.playlist li.sm2_playing a {
-    background-image: url(images/icon-pause-2x.png);
-  }
-}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2)
+  article.link p > a:after
+    background-position -5px top
+    background-size 22px

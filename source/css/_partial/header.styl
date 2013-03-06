@@ -1,64 +1,44 @@
-header #branding img {
-  width: 140px;
-  height: auto;
-  margin-bottom: 20px;
-  max-width: 100%;
-}
+// optimization done
 
-.borderradius header #branding img.circle {
-  border-radius: 70px;
-}
+.borderradius .branding .circle 
+  border-radius 70px
 
-header #branding h1#site-title {
-  margin: 0 0 10px 0;
-  font-weight: bold;
-}
+header[role="banner"]
+  ul, ol, dl
+    list-style none
+    ul, ol, dl
+        list-style disc
+        margin-left 20px
 
-header .about {
-  display: block;
-  margin-bottom: 30px;
-  font-size: .75em;
-  line-height: 1.5em;
-}
-header .about em {
-  font-style: italic;
-}
-header .about strong {
-  font-weight: bold;
-}
-header .about p + .links {
-  margin-top: 20px;
-}
-header .about .links a {
-  font-weight: bold;
-}
+  .about
+    font-size 12px
 
-header #toggle {
-  display: none;
-}
+nav 
+  padding 1em 0 1.1em
+  border-bottom 1px solid #ececec
+  box-shadow 0 5px 8px -5px rgba(0, 0, 0, 0.075)
 
-nav {
-  padding: 1em 0 1.1em;
-  border-bottom: 1px solid #ececec;
-  box-shadow: 0 5px 8px -5px rgba(0, 0, 0, 0.075);
-}
+  ul 
+    font-size .75em
+    line-height 1.5em
 
-nav ul {
-  font-size: .75em;
-  line-height: 1.5em;
-}
+  li a 
+    font-weight bold
 
-nav li a {
-  font-weight: bold;
-}
+.branding 
+  img
+    width 140px
+    height auto
+    margin-bottom 20px
+    max-width 100%
 
-.widget .title {
-  font-size: 12px;
-  padding-bottom: 10px;
-}
+  .title
+    margin 0 0 10px 0
+    font-weight bold
 
-.sub-menu {
-  font-size: 1em;
-  line-height: 1.5em;
-  margin-left: 1.5em;
-}
+#toggle 
+  display none
+
+.widget .title
+  font-size 12px
+  padding-bottom 10px
