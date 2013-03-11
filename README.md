@@ -19,10 +19,4 @@ cd themes/pithiness
 git pull
 ```
 
-## Features
-
-### Fancybox
-
-![](http://i.minus.com/iHv7h7rZNqHvo.PNG)
-
 [Hexo]: http://zespia.tw/hexo/
