@@ -1,6 +1,6 @@
 # Pithiness
 
-The theme for [Hexo]. 目前还处于完善当中。
+The theme for [Hexo](http://zespia.tw/hexo/). 目前还处于完善当中。
 
 ## 安装 Install
 
@@ -27,6 +27,3 @@ git pull
 
 Responsive 
 fancybox
-
-
-[Hexo](http://zespia.tw/hexo/)
