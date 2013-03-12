@@ -17,11 +17,21 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
 <% } %>
 
 <% if (theme.fancybox){ %>
-<link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="<%- config.root %>fancybox/jquery.fancybox.css">
+<script type="text/javascript" src="<%- config.root %>fancybox/jquery.fancybox.js"></script>
 <script type="text/javascript">
 (function($){
-  $('.fancybox').fancybox();
+  $('.fancybox').fancybox({
+    prevEffect: 'none',
+    nextEffect: 'none',
+    closeBtn: false,
+    helpers: {
+        title: {type: 'inside'},
+        buttons: {
+            position: 'bottom'
+        }
+    }
+  });
 })(jQuery);
 </script>
 <% } %>
