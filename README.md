@@ -18,6 +18,7 @@ Execute the following command to update pithiness.
 cd themes/pithiness
 git pull
 ```
+
 ## 效果图 Effect diagram
 
 ![](http://ww3.sinaimg.cn/large/a74ecc4cjw1e2ne9rb3nuj.jpg)
@@ -28,4 +29,4 @@ Responsive
 fancybox
 
 
-[Hexo]: http://zespia.tw/hexo/
+[Hexo](http://zespia.tw/hexo/)
