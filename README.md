@@ -7,7 +7,7 @@ The theme for [Hexo](http://zespia.tw/hexo/). 目前还处于完善当中。
 Execute the following command and modify `theme` in `_config.yml` to `pithiness`.
 
 ```
-git clone git://github.com/tommy351/hexo-theme-pithiness.git themes/pithiness
+git clone git://github.com/okoala/hexo-theme-pithiness.git
 ```
 
 ## 更新 Update
